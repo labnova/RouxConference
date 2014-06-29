@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <% include partials/template/head.ejs %>
+
+</head>
+
+<body class="<%= page %>">
+<% include partials/template/header.ejs %>
+<% include partials/content/listaLibri.ejs %>
+	<h1><%= title %></h1>
+	
+<section class="layout">
+
+	<div class="primary">
+	<% include partials/content/scopo.ejs %>
+	<% include partials/content/getBusy.ejs %>
+	<% include partials/content/whoShouldCome.ejs %>
+
+	</div>
+	<aside class="secondary">
+		<% include partials/content/prossimiEsercizi.ejs %>
+		<% include partials/content/listaEsercizi.ejs %>
+	</aside>
+
+
+</section>
+
+
+
+
+	 <% include partials/template/default.ejs %>
+	<% include partials/template/footer.ejs %>
+</body>
+
+</html>
